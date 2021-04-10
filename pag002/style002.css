@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    height: 130px;
+    padding: 30px 12%;
+}
+
+.max-width {
+    max-width: 940px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+#language {
+    border: 1px solid #0095E0;
+    color: #0095E0;
+    padding: 7px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #0095E0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.section-photo {
+    background-image: url(ship-pag02.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+.section-float {
+    background-color: #4cb5e9e0;
+    width: 220px;
+    height: 170px;
+
+    position: absolute;
+    top: 35%;
+    left: 18.5%;
+    padding-top: 43px;
+    padding-left: 53px; 
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+article,
+.where-what {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+article p {
+    color: #858585;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+.mission-vision {
+    width: 100%;
+    height: 400px;
+    
+    background-color: #EEEEEE;
+    color: #858585;
+}
+
+.max-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.mission {
+    width: 400px;
+    margin: 35px 70px 35px 0px;
+}
+
+.vision {
+    width: 400px;
+    margin: 35px 0px 35px 70px;
+}
+
+.mission-vision h2 {
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.where-what {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.products {
+    font-size: 14px;
+    color: #858585;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.box-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.box-products div {
+    width: 109px;
+    height: 119px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #0095E0;
+    align-items: center;
+}
+
+.box-products div .product-nav {
+    padding-top: 3px;
+}
+
+.box-products div .product-seg {
+    padding-top: 9px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0093E0;
+    color: #fff;
+
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav div span {
+    padding: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    
+    text-align: center;
+}
+
+footer p {
+    color: #858585;
+    padding: 10px;
+}
