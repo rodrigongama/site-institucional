@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
 
+/* Global #################*/
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Header #################*/
 header {
     height: 130px;
     padding: 30px 12%;
@@ -47,6 +49,7 @@ header {
     text-transform: uppercase;
 }
 
+/* Titles #################*/
 h2 {
     font-family: 'Roboto Slab', serif;
     color: #0095E0;
@@ -56,6 +59,7 @@ h2 {
     font-weight: 900;
 }
 
+/* Photo #################*/
 .section-photo {
     background-image: url(ship-pag02.png);
     background-repeat: no-repeat;
@@ -64,6 +68,8 @@ h2 {
 
     background-size: cover;
     background-position: center center;
+
+    position: relative;
 }
 
 .section-float {
@@ -86,6 +92,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Paragraph #################*/
 article,
 .where-what {
     max-width: 800px;
@@ -102,6 +109,7 @@ article p {
     padding: 10px 0px;
 }
 
+/* Mission and Vision #################*/
 .mission-vision {
     width: 100%;
     height: 400px;
@@ -136,12 +144,14 @@ article p {
     padding-bottom: 15px;
 }
 
+/* Photos-links #################*/
 .where-what {
     display: flex;
     justify-content: space-between;
     padding: 40px 0px;
 }
 
+/* Products #################*/
 .products {
     font-size: 14px;
     color: #858585;
@@ -175,6 +185,7 @@ article p {
     padding-top: 9px;
 }
 
+/* Nav #################*/
 nav {
     width: 100%;
     height: 50px;
@@ -194,6 +205,7 @@ nav div span {
     padding: 15px;
 }
 
+/* Footer #################*/
 footer {
     width: 100%;
     height: 40px;
@@ -204,4 +216,58 @@ footer {
 footer p {
     color: #858585;
     padding: 10px;
+}
+
+/* Responsive #################*/
+@media (max-width: 819px) {
+    article p {
+        padding: 10px;
+    }
+
+    .mission-vision {
+        height: 650px;
+    }
+
+    .mission, .vision {
+        margin: 20px auto;
+    }
+
+    .max-section {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .where-what {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .where-what {
+        width: 50%;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 474px) {
+    header {
+        padding: 30px 2%;
+    }
+
+    #language {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+    
+    nav div span {
+        padding: 2px;
+    }
 }
