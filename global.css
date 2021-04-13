@@ -51,6 +51,84 @@ header {
     cursor: pointer;
 }
 
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100vh;
+    background-color: #0093E0;
+    
+    z-index: 10;
+    transition: 200ms ease-in-out;
+}
+
+.side-menu.hidden {
+    left: -360px;
+}
+
+.format {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+        
+    color: #fff;
+}
+
+.side-menu h3 {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    padding: 20px 0px 6px 0px;
+}
+
+.side-menu .format a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#search {
+    background: none;
+    border: 1px solid #fff;
+    width: 150px;
+    margin-top: 20px;
+    padding: 7px;
+    position: relative;
+}
+
+#search::placeholder{
+    color: #fff;
+}
+
+.icon {
+    background: transparent url(./static/images/lupa.png) no-repeat right;
+            
+    border: none;    
+    outline: none;
+    cursor: pointer;
+
+    width: 20px;
+    height: 25px;
+
+    position: absolute;
+    right: 65px;
+    bottom: 40%;
+}
+
+.close-menu {
+    background: #0093E0 url(./static/images/close.png) no-repeat;
+    width: 25px;
+    height: 25px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
 /* Titles #################*/
 h2 {
     font-family: 'Roboto Slab', serif;
@@ -104,3 +182,5 @@ footer p {
     color: #858585;
     padding: 10px;
 }
+
+
