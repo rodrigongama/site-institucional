@@ -1,67 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
-
-/* Global #################*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* Header #################*/
-header {
-    height: 130px;
-    padding: 30px 12%;
-}
-
-.max-width {
-    max-width: 940px;
-    width: 100%;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-top {
-    width: 36px;
-    height: 24px;
-    padding: 2px;
-}
-
-.nav1, .nav2, .nav3{
-    width: 100%;
-    height: 3px;
-    background-color: #424140;
-    margin: 6px 0px;
-    border-radius: 3px;
-}
-
-.logo {
-    margin-left: 30px;
-}
-
-#language {
-    border: 1px solid #0095E0;
-    color: #0095E0;
-    padding: 7px;
-    text-transform: uppercase;
-}
-
-/* Titles #################*/
-h2 {
-    font-family: 'Roboto Slab', serif;
-    color: #0095E0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 900;
-}
-
 /* Photo #################*/
 .section-photo {
-    background-image: url(ship-pag02.png);
+    background-image: url(../static/images/ship-pag02.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 250px;
@@ -110,7 +49,7 @@ article p {
 }
 
 /* Mission and Vision #################*/
-.mission-vision {
+.columns-texts {
     width: 100%;
     height: 400px;
     
@@ -118,7 +57,7 @@ article p {
     color: #858585;
 }
 
-.max-section {
+.max-columns {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
@@ -129,17 +68,17 @@ article p {
     text-align: left;
 }
 
-.mission {
+.text1 {
     width: 400px;
     margin: 35px 70px 35px 0px;
 }
 
-.vision {
+.text2 {
     width: 400px;
     margin: 35px 0px 35px 70px;
 }
 
-.mission-vision h2 {
+.columns-texts h2 {
     text-align: left;
     padding-bottom: 15px;
 }
@@ -185,38 +124,6 @@ article p {
     padding-top: 9px;
 }
 
-/* Nav #################*/
-nav {
-    width: 100%;
-    height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #0093E0;
-    color: #fff;
-
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-nav div span {
-    padding: 15px;
-}
-
-/* Footer #################*/
-footer {
-    width: 100%;
-    height: 40px;
-    
-    text-align: center;
-}
-
-footer p {
-    color: #858585;
-    padding: 10px;
-}
 
 /* Responsive #################*/
 @media (max-width: 819px) {
@@ -224,15 +131,15 @@ footer p {
         padding: 10px;
     }
 
-    .mission-vision {
+    .columns-texts {
         height: 650px;
     }
 
-    .mission, .vision {
+    .text1, .text2 {
         margin: 20px auto;
     }
 
-    .max-section {
+    .max-columns {
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -248,26 +155,9 @@ footer p {
     }
 }
 
-@media (max-width: 580px) {
-    header {
-        padding: 30px 5%;
-    }
-}
-
 @media (max-width: 474px) {
-    header {
-        padding: 30px 2%;
-    }
-
-    #language {
+    #select {
         display: none;
     }
-
-    .logo {
-        margin-left: 0px;
-    }
     
-    nav div span {
-        padding: 2px;
-    }
 }
