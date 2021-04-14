@@ -1,0 +1,136 @@
+/* Photo-float ##############*/
+.photo-ship3 {
+    background: url(../static/images/ship-contact.png) center;
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.float-contact {
+    width: 200px;
+    height: 150px;
+    background-color: #0095e098;
+    text-align: center;
+    padding-top: 55px;
+    position: absolute;
+
+    top: 50%;
+    left: 18%;
+}
+
+.float-contact h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Main ##############*/
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 840px;
+    margin: 100px auto;
+}
+
+/* Form ##############*/
+form, 
+.info-adress {
+    width: 350px;
+    height: 600px;
+    padding-left: 6px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div label {
+    margin: 2px 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #858585;
+}
+
+form div input,
+form div select {
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #858585;
+}
+
+form div .tel {
+    flex-direction: row;
+}
+
+form div #tel1 {
+    width: 50px;
+}
+
+form div .tel span {
+    margin: 0px 10px;
+}
+
+form div #tel2 {
+    width: 130px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    width: 205px;
+    padding: 7px;
+    margin-top: 20px;
+
+    background: none;
+    border: 1.5px solid #0095E0;
+    color: #0095E0;
+    font-weight: 800;
+}
+
+
+/* Map ##############*/
+.info-adress {
+    padding-top: 20px;
+}
+
+.info-adress div {
+    padding: 20px 30px 0px 0px;
+}
+
+.info-adress h2 {
+    text-align: left;
+    font-size: 18px;
+}
+
+.info-adress p {
+    padding: 2px 0px 20px 0px;
+    font-size: 15px;
+    color: #858585;
+}
+
+/* Responsive ##############*/
+@media (max-width: 715px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 549px) {
+    nav a {
+        margin: 1px;
+    }
+
+    nav a::after {
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 424px) {
+    #select {
+        display: none;
+    }
+}
