@@ -68,14 +68,14 @@ article p {
     text-align: left;
 }
 
-.text1 {
-    width: 400px;
-    margin: 35px 70px 35px 0px;
+.text1,
+.text2 {
+    width: 100%;
+    margin-top: 35px;
 }
 
 .text2 {
-    width: 400px;
-    margin: 35px 0px 35px 70px;
+    margin-left: 95px;
 }
 
 .columns-texts h2 {
@@ -139,25 +139,41 @@ article p {
         margin: 20px auto;
     }
 
-    .max-columns {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-
+    .max-columns,
     .where-what {
-        display: flex;
         flex-direction: column;
     }
 
-    .where-what {
-        width: 50%;
+    .where-what a {
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 474px) {
+@media (max-width: 549px) {
+    nav a {
+        margin: 1px;
+    }
+
+    nav a::after {
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 400px) {
     #select {
         display: none;
     }
     
+    .max-columns {
+        padding: 10px;
+    }
+
+    .where-what img {
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .box-products {
+        flex-direction: column;
+    }
 }
