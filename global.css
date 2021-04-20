@@ -93,11 +93,14 @@ header {
     width: 150px;
     margin-top: 20px;
     padding: 7px;
-    position: relative;
 }
 
 #search::placeholder{
     color: #fff;
+}
+
+.search-button {
+    position: relative;
 }
 
 .icon {
@@ -109,10 +112,10 @@ header {
 
     width: 20px;
     height: 25px;
-
+    
     position: absolute;
+    top: 24px;
     right: 65px;
-    bottom: 40%;
 }
 
 .close-menu {

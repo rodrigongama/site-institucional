@@ -88,6 +88,7 @@ form button {
     border: 1.5px solid #0095E0;
     color: #0095E0;
     font-weight: 800;
+    cursor: pointer;
 }
 
 
