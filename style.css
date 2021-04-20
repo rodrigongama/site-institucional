@@ -141,6 +141,15 @@ main {
     top: -25px;
 }
 
+.layer-active {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .news-open {
     position: fixed;
     right: 0;
