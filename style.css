@@ -17,7 +17,7 @@
     height: 270px;
 
     position:absolute;
-    left: 22%;
+    left: 18%;
     top: 46%;
 
     color: white;
@@ -29,6 +29,11 @@ h1 {
     text-transform: uppercase;
     padding-bottom: 10px;
     font-size: 27px;
+}
+
+.section-float button.slick-prev.slick-arrow,
+.section-float button.slick-next.slick-arrow {
+    display: none !important;
 }
 
 .arrow-prev,
@@ -125,6 +130,7 @@ main {
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 10;
 }
 
 .close-news {
@@ -148,6 +154,7 @@ main {
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .news-open {
@@ -157,7 +164,6 @@ main {
     height: 650px;
     width: 220px;
     z-index: 10;
-    background-color: #fff;
 }
 
 .news-hidden {
@@ -256,6 +262,7 @@ main {
 .boxes-projects {
     display: grid;
     grid-template-columns: auto auto auto;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 
@@ -265,7 +272,6 @@ main {
 .box-project {
     width: 300px;
     height: 250px;
-    margin: 10px;
     border: 1px solid;
 }
 
@@ -338,12 +344,16 @@ main {
     margin-top: 30px;
 }
 
-.partners img {
-    margin-left: 15px;
+.partners .slick-track div img {
+    margin: 0 auto;
 }
 
-.arrow-prev2,
-.arrow-next2 {
+.partners.slick-slider {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.slick-arrow {
     background-repeat: no-repeat;
     width: 20px;
     height: 70px;
@@ -352,16 +362,15 @@ main {
     border: none;
     outline: none;
     cursor: pointer;
+    font-size: 0;
 }
 
-.arrow-prev2 {
+.section-partners .slick-arrow.slick-prev {
     background-image: url(./static/images/blue-arrow-prev.png);
 }
 
-.arrow-next2 {
+.section-partners .slick-arrow.slick-next {
     background-image: url(./static/images/blue-arrow-next.png);
-    
-    margin-left: 15px;
 }
 
 
@@ -375,12 +384,7 @@ main {
 
 @media (max-width: 820px) {
     body {
-        font-size: 95%;
-    }
-    
-    .partners .none1 {
-        display: none;
-        
+        font-size: 15px;
     }
 }
 
@@ -388,15 +392,10 @@ main {
     .boxes-projects {
         grid-template-columns: auto;
     }
-
 }
 
 @media (max-width: 549px) {
     .float-news {
-        display: none;
-    }
-
-    .partners .none2 {
         display: none;
     }
 
