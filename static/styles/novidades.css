@@ -1,0 +1,138 @@
+.main-news {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.float-pageNews {
+  width: 300px;
+  height: 180px;
+  padding: 60px;
+  margin-top: 30px;
+
+  text-align: center;
+
+  background-color: lightblue;
+  color: #fff;
+}
+
+.main-news .section-texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+  margin: 130px auto;
+  padding: 10px;
+}
+
+.main-news .section-texts h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.main-news .section-texts p {
+  text-align: justify;
+  max-width: 400px;
+}
+
+/* Form ############# */
+.form-news {
+  max-width: 470px;
+  height: 800px;
+  padding-top: 15px;
+  margin: 10px auto;
+}
+
+.form-news label,
+.form-news input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-news input {
+  border: 1px solid darkblue;
+  padding: 6px;
+}
+
+.form-news label {
+  margin: 15px 0px 2px 0px;
+  font-weight: 600;
+  color: #464646;
+}
+
+.form-news div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.format-input {
+  flex-direction: column;
+}
+
+.form-news #name,
+.form-news #street,
+.form-news #complement {
+  width: 340px;
+}
+
+.form-news #cep,
+.form-news #number {
+  width: 110px;
+}
+
+.form-news #street,
+.form-news #state,
+.form-news #city {
+  margin-right: 20px;
+}
+
+.form-news #state {
+  width: 60px;
+}
+
+.form-news #city,
+.form-news #neighborhood {
+  width: 185px;
+}
+
+.form-news button {
+  width: 205px;
+  padding: 7px;
+  margin-top: 20px;
+
+  background: none;
+  border: 1.5px solid darkblue;
+  color: darkblue;
+  font-weight: 800;
+  cursor: pointer;
+  
+}
+
+.form-news button:hover {
+  background-color: darkblue;
+  color: #fff;
+  transition: 1s;
+}
+
+/* Responsive ############ */
+@media (max-width: 999px) {
+  .main-news .section-texts {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 685px) {
+  .main-news .section-texts {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 499px) {
+  .form-news {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .form-news div {
+    flex-direction: column;
+  }
+}

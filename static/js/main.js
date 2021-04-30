@@ -92,7 +92,42 @@ const Paterns = {
     }
 }
 
+const MaskForm = {
+    init: function () {
+      this.includeMask();
+    },
+    includeMask: function () {
+      $('#tel1').mask('(00)');
+      $('#tel2').mask('00000-0000');
+      $('#cep').mask('00000-000');
+    },
+  };
+  
+const PopulateAdress = {
+    init: function () {
+      this.getCepForm();
+    },
+    getCepForm: function () {
+      let cep = document.querySelector('#cep');
+  
+      cep.addEventListener('blur', function (event) {
+        let valueCep = event.target.value;
+  
+        $.ajax(`https://brasilapi.com.br/api/cep/v1/${valueCep}`)
+            .then((response) => {
+            document.getElementById('street').value = response.street;
+            document.getElementById('neighborhood').value = response.neighborhood;
+            document.getElementById('city').value = response.city;
+            document.getElementById('state').value = response.state;
+          },
+        );
+      });
+    },
+  };
+  
 Navigation.init();
 Float.init();
 News.init();
 Paterns.init();
+PopulateAdress.init();
+MaskForm.init();
