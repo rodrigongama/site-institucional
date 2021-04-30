@@ -43,8 +43,8 @@ header {
 }
 
 #select {
-    border: 1px solid #50b5f9;
-    color: #50b5f9;
+    border: 1px solid #265778;
+    color: #265778;
     padding: 7px;
     text-transform: uppercase;
     outline: none;
@@ -135,7 +135,7 @@ header {
 /* Titles #################*/
 h2 {
     font-family: 'Roboto Slab', serif;
-    color: #50b5f9;
+    color: #265778;
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;

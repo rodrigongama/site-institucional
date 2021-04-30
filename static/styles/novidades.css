@@ -11,7 +11,7 @@
 
   text-align: center;
 
-  background-color: lightblue;
+  background-color: #265778a8;
   color: #fff;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .form-news input {
-  border: 1px solid darkblue;
+  border: 1px solid #265778;
   padding: 6px;
 }
 
@@ -99,15 +99,15 @@
   margin-top: 20px;
 
   background: none;
-  border: 1.5px solid darkblue;
-  color: darkblue;
+  border: 1.5px solid #265778;
+  color: #265778;
   font-weight: 800;
   cursor: pointer;
   
 }
 
 .form-news button:hover {
-  background-color: darkblue;
+  background-color: #265778;
   color: #fff;
   transition: 1s;
 }

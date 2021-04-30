@@ -22,7 +22,7 @@
 
     color: white;
     font-size: 15px;
-    padding: 27px;
+    padding: 37px;
 }
 
 h1 {
@@ -100,7 +100,7 @@ main {
 
     align-items: center;
 
-    border: 1px solid #50b5f9;
+    border: 1px solid #265778;
     background-color: #fff;
     cursor: pointer;
     outline: none;
@@ -120,7 +120,7 @@ main {
     height: 90px;
     text-align: center;
 
-    background: #0591DA;
+    background: #265778;
     color: #fff;
 
     right: 0;
@@ -134,7 +134,7 @@ main {
 }
 
 .close-news {
-    background: #0591DA url(./static/images/close.png) no-repeat center;
+    background: #265778 url(./static/images/close.png) no-repeat center;
     height: 25px;
     width: 25px;
 
@@ -220,8 +220,8 @@ main {
 
 .button-more,
 .submit-email {
-    border: 1.5px solid #0591DA;
-    color: #0591DA;
+    border: 1.5px solid #265778;
+    color: #265778;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -283,7 +283,7 @@ main {
 }
 
 .number {
-    color: #50b5f9;
+    color: #265778;
     font-size: 60px;
 }
 
@@ -312,7 +312,7 @@ main {
 
 
 .button-projects {
-    border: 1px solid #50b5f9;
+    border: 1px solid #265778;
     background: none;
 
     padding: 8px;
@@ -326,7 +326,7 @@ main {
 .button-projects a {
     text-decoration: none;
     cursor: pointer;
-    color: #50b5f9;
+    color: #265778;
 }
 
 /* Partners #################*/
