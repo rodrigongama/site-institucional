@@ -43,8 +43,8 @@ header {
 }
 
 #select {
-    border: 1px solid #0095E0;
-    color: #0095E0;
+    border: 1px solid #50b5f9;
+    color: #50b5f9;
     padding: 7px;
     text-transform: uppercase;
     outline: none;
@@ -57,7 +57,7 @@ header {
     left: 0;
     width: 360px;
     height: 100vh;
-    background-color: #0093E0;
+    background-color: #265778;
     
     z-index: 10;
     transition: 200ms ease-in-out;
@@ -119,7 +119,7 @@ header {
 }
 
 .close-menu {
-    background: #0093E0 url(./static/images/close.png) no-repeat;
+    background: #265778 url(./static/images/close.png) no-repeat;
     width: 25px;
     height: 25px;
 
@@ -135,7 +135,7 @@ header {
 /* Titles #################*/
 h2 {
     font-family: 'Roboto Slab', serif;
-    color: #0095E0;
+    color: #50b5f9;
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
@@ -152,7 +152,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    background: #0093E0;
+    background: #265778;
     
     text-transform: uppercase;
     font-size: 12px;

@@ -100,7 +100,7 @@ main {
 
     align-items: center;
 
-    border: 1px solid #0095E0;
+    border: 1px solid #50b5f9;
     background-color: #fff;
     cursor: pointer;
     outline: none;
@@ -283,7 +283,7 @@ main {
 }
 
 .number {
-    color: #0095E0;
+    color: #50b5f9;
     font-size: 60px;
 }
 
@@ -312,7 +312,7 @@ main {
 
 
 .button-projects {
-    border: 1px solid #0095E0;
+    border: 1px solid #50b5f9;
     background: none;
 
     padding: 8px;
@@ -326,7 +326,7 @@ main {
 .button-projects a {
     text-decoration: none;
     cursor: pointer;
-    color: #0095E0;
+    color: #50b5f9;
 }
 
 /* Partners #################*/

@@ -9,7 +9,7 @@
 .float-contact {
     width: 200px;
     height: 150px;
-    background-color: #0095e098;
+    background-color: #50b5f998;
     text-align: center;
     padding-top: 55px;
     position: absolute;
@@ -85,8 +85,8 @@ form button {
     margin-top: 20px;
 
     background: none;
-    border: 1.5px solid #0095E0;
-    color: #0095E0;
+    border: 1.5px solid #50b5f9;
+    color: #50b5f9;
     font-weight: 800;
     cursor: pointer;
 }
