@@ -103,31 +103,42 @@ const MaskForm = {
     },
   };
   
-const PopulateAdress = {
-    init: function () {
-      this.getCepForm();
-    },
-    getCepForm: function () {
-      let cep = document.querySelector('#cep');
-  
-      cep.addEventListener('blur', function (event) {
-        let valueCep = event.target.value;
-  
-        $.ajax(`https://brasilapi.com.br/api/cep/v1/${valueCep}`)
-            .then((response) => {
+const AdressForm = {
+  init: function () {
+    this.addListeners();
+  },
+  addListeners: function () {
+    let cepInput = document.querySelector('#cep');
+    let form = document.querySelector('.form-news');
+
+    cepInput.addEventListener('keyup', (event) => {
+      let valueCep = event.target.value.length;
+      let cep = event.target.value;
+
+      if (valueCep === 9) {
+        $.ajax(`https://brasilapi.com.br/api/cep/v1/${cep}`)
+
+          .then((response) => {
             document.getElementById('street').value = response.street;
             document.getElementById('neighborhood').value = response.neighborhood;
             document.getElementById('city').value = response.city;
             document.getElementById('state').value = response.state;
-          },
-        );
-      });
-    },
-  };
-  
+          })
+          .catch(() => {
+            let para = document.createElement('p');
+            para.textContent = 'Digite um CEP válido';
+            para.style.color = 'red';
+            para.style.fontWeight = 'bold';
+            form.appendChild(para);
+          });
+      }
+    });
+  },
+};
+
 Navigation.init();
 Float.init();
 News.init();
 Paterns.init();
-PopulateAdress.init();
 MaskForm.init();
+AdressForm.init();
