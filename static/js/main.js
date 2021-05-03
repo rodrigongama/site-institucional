@@ -109,27 +109,25 @@ const AdressForm = {
   },
   addListeners: function () {
     let cepInput = document.querySelector('#cep');
-    let form = document.querySelector('.form-news');
+    let para = document.querySelector('.para');
 
     cepInput.addEventListener('keyup', (event) => {
-      let valueCep = event.target.value.length;
-      let cep = event.target.value;
+      const { value } = event.target;
 
-      if (valueCep === 9) {
-        $.ajax(`https://brasilapi.com.br/api/cep/v1/${cep}`)
+      if (value.length === 9) {
+        $.ajax(`https://brasilapi.com.br/api/cep/v1/${value}`)
 
           .then((response) => {
             document.getElementById('street').value = response.street;
-            document.getElementById('neighborhood').value = response.neighborhood;
+            document.getElementById('neighborhood').value =
+              response.neighborhood;
             document.getElementById('city').value = response.city;
             document.getElementById('state').value = response.state;
+            para.textContent = '';
           })
           .catch(() => {
-            let para = document.createElement('p');
-            para.textContent = 'Digite um CEP válido';
-            para.style.color = 'red';
-            para.style.fontWeight = 'bold';
-            form.appendChild(para);
+            para.textContent = 'Digite um CEP válido!';
+            para.classList.add('paraError');
           });
       }
     });

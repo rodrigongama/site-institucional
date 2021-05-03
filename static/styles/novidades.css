@@ -112,6 +112,11 @@
   transition: 1s;
 }
 
+.paraError {
+  font-size: 14px;
+  color: red;
+}
+
 /* Responsive ############ */
 @media (max-width: 999px) {
   .main-news .section-texts {
